@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Emilys+Candy|Felipa|Italianno|Lakki+Reddy|Lato|Markazi+Text|Milonga|Miss+Fajardose|Pacifico|Quintessential|Roboto|Shrikhand|Tangerine|UnifrakturMaguntia" rel="stylesheet">
+    <title>Document</title>
+    <style> 
+      html,body{
+        
+            margin: 0px;
+            padding: 0px;
+        }
+        *
+        {
+            box-sizing: border-box;
+        }
+        .container1
+        {
+            width: 100%;
+            height: 90vh;
+          /*  border: 2px solid red;*/
+            position: relative;
+           background-image: url('wine2.jpg');
+           background-size: 100% 100%;
+          
+    
+        }
+        .grill
+    {
+        width: 25%;
+        height: 25%;
+       /* border: 2px solid black;*/
+        position: absolute; 
+        top:0%;
+        left: 5%;
+        font-family: 'Italianno', cursive;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        color: white;
+    }
+    .menu
+    {
+        width: 10%;
+        height: 25%;
+       /* border: 2px solid white;*/
+        position: absolute; 
+        top:3%;
+        right: 35%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .reservation
+    {
+        width: 10%;
+        height: 25%;
+       /* border: 2px solid white;*/
+        position: absolute; 
+        top:3%;
+        right:25%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+    }
+    .contact
+    {
+        width: 10%;
+        height: 25%;
+       /* border: 2px solid white;*/
+        position: absolute; 
+        top:3%;
+        right:15%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .galary
+    {
+        width: 10%;
+        height: 25%;
+      /*  border: 2px solid white;*/
+        position: absolute; 
+        top:3%;
+        right:5%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    a{
+        color:white;
+        font-size: 18px;
+        text-underline-position:auto;
+    }
+    .event
+    {
+        width: 30%;
+        height: 25%;
+      /* border: 2px solid white;*/
+        position: absolute; 
+        top:35%;
+        right:35%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Italianno', cursive;
+        color: white;
+        font-size: 70px;
+      
+    }
+    .share
+        {
+            width: 20%;
+            height: 3%;
+            left: 50%;
+          /*  border: 2px solid black;*/
+            transform: translateX(-50%);
+            top: 60%;
+            position: absolute;
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        text-underline-position: auto;
+        color: white;
+      
+            
+        }
+        .share>a{
+            
+            text-underline-position: below;
+            color:white;
+        
+        }
+        .container2
+        {
+            
+            width: 100%;
+            height: 100vh;
+           /* border: 2px solid red;*/
+            position: relative;
+            background-color: black;
+           
+          }
+          .box1
+          {
+            width: 40%;
+        height: 25%;
+       border: 2px solid black;
+        position: absolute; 
+        top:8%;
+        left:5%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Tangerine';
+        color: black;
+        font-size: 40px;
+        color: white;
+          }
+          .view
+          {
+              width: 25%;
+              height: 10%;
+              border: 2px solid white;
+              position: absolute;
+              top: 10%;
+              right: 15%;
+              display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: white;
+          }
+          .id
+          {
+              width: 20%;
+              height: 5%;
+              border: 2px solid black;
+              position: absolute;
+              top: 35%;
+              left: 5%;
+              display: flex;
+             justify-content: center;
+             align-items: center;
+             font-size: 18px;
+             color: white;
+          }
+          .head1
+        {
+            width: 35%;
+            height: 40%;
+           /* border: 2px solid red;*/
+            top: 47%;
+            left: 10%;
+            position: absolute;
+            font-size: 20px;
+            line-height: 77px;
+            color: white;
+            
+
+        }
+        .head2
+        {
+            width: 35%;
+            height: 40%;
+           /* border: 2px solid red;*/
+            top: 47%;
+            right: 10%;
+            position: absolute;
+            font-size: 20px;
+            line-height: 77px;
+            color: white;
+
+        }
+        .line1
+        {
+            width: 80%;
+            height: 0%;
+            position: absolute;
+            border: 0.5px solid white;
+            top: 47%;
+            left: 10%
+        }
+        .line2
+        {
+            width: 80%;
+            height: 0%;
+            position: absolute;
+            border: 0.5px solid white;
+            top: 59%;
+            left: 10%
+        }
+        .line3
+        {
+            width: 80%;
+            height: 0%;
+            position: absolute;
+            border: 0.5px solid white;
+            top: 70%;
+            left: 10%
+        }
+        .container3
+        {
+             
+            width: 100%;
+            height: 100vh;
+          /*  border: 2px solid black;*/
+            position: relative;
+            background-color: black;
+           
+        }
+        .img1
+        {
+            width: 40%;
+            height: 48%;
+            position: absolute;
+            border: 2px solid black;
+            left: 7%;
+            background-image: url('room1.jpg');
+            background-size: 100% 100%;
+        }
+        .img2
+        {
+            width: 40%;
+            height: 48%;
+            position: absolute;
+            border: 2px solid black;
+            right: 7%;
+            background-image: url('room2.jpg');
+            background-size: 100% 100%;
+        }
+        .room
+        {
+            width: 15%;
+            height: 5%;
+            position: absolute;
+            border: 2px solid black;
+            right: 43%;
+            top: 53%;
+            font-size: 20px;
+            color: white;
+        }
+        .text1
+        {
+            width: 40%;
+            height: 40%;
+            position: absolute;
+            border: 2px solid black;
+            right: 30%;
+            top: 58%;
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        font-family: 'Tangerine';
+        color: white;
+           
+        }
+        .container4
+        {
+            width: 100%;
+            height: 100vh;
+           /* border: 2px solid black;*/
+            position: relative;
+            background-color: black;
+        }
+        .corner
+        {
+            width: 15%;
+            height: 5%;
+            position: absolute;
+            border: 2px solid black;
+            right: 20%;
+            top: 12%;
+            font-size: 20px;
+            color: white;
+        }
+        .img3
+        {
+            width: 40%;
+            height: 46%;
+            position: absolute;
+            border: 2px solid black;
+            left: 7%;
+            background-image: url('seat1.jpg');
+            background-size: 100% 100%;
+        }
+        .corner2
+        {
+            width: 15%;
+            height: 5%;
+            position: absolute;
+            border: 2px solid black;
+            left: 20%;
+            top: 58%;
+            font-size: 20px;
+            color: white;
+        }
+    
+        .img4
+        {
+            width: 40%;
+            height: 46%;
+            position: absolute;
+            border: 2px solid black;
+            right: 7%;
+            top: 50%;
+            background-image: url('seat2.jpg');
+            background-size: 100% 100%;
+        }
+        .c1
+        {
+            width: 35%;
+            height: 25%;
+            position: absolute;
+            border: 2px solid black;
+            right: 10%;
+            top: 18%;
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Tangerine';
+            color: white;
+        }
+        .c2
+        {
+            width: 35%;
+            height: 25%;
+            position: absolute;
+            border: 2px solid black;
+            left: 10%;
+            top: 65%;
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Tangerine';
+            color: white;
+        }
+        .container5
+        {
+            
+            width: 100%;
+            height: 100vh;
+          /*  border: 2px solid black;*/
+            position: relative;
+            background-color: black;
+        }
+        .corner3
+        {
+            width: 15%;
+            height: 5%;
+            position: absolute;
+            border: 2px solid black;
+            right: 20%;
+            top: 12%;
+            font-size: 20px;
+            color: white;
+        }
+        .img5
+        {
+            width: 40%;
+            height: 48%;
+            position: absolute;
+            border: 2px solid black;
+            left: 7%;
+            background-image: url('seat3.jpg');
+            background-size: 100% 100%;
+        }
+        .c3
+        {
+            width: 35%;
+            height: 25%;
+            position: absolute;
+            border: 2px solid black;
+            right: 10%;
+            top: 18%;
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Tangerine';
+            color: white;
+        }
+       .book_event
+       {
+           width: 30%;
+           height: 15%;
+           position: absolute;
+            border: 2px solid white;
+            left: 35%;
+            top: 60%;
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Roboto';
+            color: white;
+       }
+      
+        </style>
+</head>
+<body>
+   <div class="container1">
+        <div class="grill"><b>GRILLING</b></div>
+                        <div class="menu"><a href="menu.html">MENU</a></div>
+                        <div class="reservation"><a href="reservation.html">RESERVATION</a></div>
+                        <div class="contact"><a href="open.html">CONTACT</a></div>
+                        <div class="galary"><a href="gallery/gallery.html">GALLERY</a></div>
+                        <div class="event">Private dining & events</div>
+                        <div class="share">Share On:<a href="https://www.facebook.com/">Facebook/ </a>
+                    <a href="https://twitter.com/">Twitter/ </a><a href="https://in.pinterest.com/">Pinterest</a></div>
+                        
+   </div> 
+   <div class="container2">
+       <div class="box1">There are four private spaces available for lunch, dinner or indeed at any
+            other time (receptions, presentations or brainstorms).
+            In addition the restaurant is available for breakfast & private hire as are all the other
+             spaces.</div>
+             <div class="view">VIEW PRIVATE DINING BROCHURE</div>
+             <div class="id">+1 555 789 899 2 /<a href="#" style="color: white">hello@marco.com</a> </div>
+             <div class="head1">
+                    <ul>
+                       <li>Wedding Dinner</li>
+                       <li>Hen Party</li>
+                       <li>Birthday Party</li>
+                      
+                    </ul>
+                </div>
+                <div class="head2">
+                       <ul>
+                               <li>Christmas Party</li>
+                               <li>New Year Party</li>
+                               <li>Other Occasions</li>
+                               
+                            </ul>
+                </div>
+
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+               
+               </div>
+
+              <div class="container3">
+                  <div class="img1"></div>
+                  <div class="img2"></div>
+                  <div class="room">4 spaces to choose from</div>
+                  <div class="text1">In sodales, mi at placerat blandit, augue urna ornare ex,
+                       ut posuere lectus elit in quam. Maecenas auctor gravida erat ac bibendum.
+                 Praesent nulla lorem, eleifend quis diam id, cursus scelerisque lacus. Cras in 
+                 arcu vel eros imperdiet aliquam. Maecenas cursus sem pulvinar augue sagittis
+                  condimentum.</div>
+              </div>
+              <div class="container4">
+                  <div class="corner"><b>The Azzuro Corner</b></div>
+                  <div class="img3"></div>
+                  <div class="corner2"><b>Private Lobby</b></div>
+                  <div class="img4"></div>
+                  <div class="c1">The ultimate Chef’s Table experience, situated in the corner of the
+                       kitchen. Soak up the atmosphere and watch our team of chef’s create a
+                        memorable meal.</div>
+                  <div class="c2">Create a memorable meal. The room is situated almost within the
+                       kitchen many of his books adorning the walls.</div>
+              </div>
+              <div class="container5">
+                  <div class="corner3"><b>
+                        Hose Lobby</b></div>
+                  <div class="img5"></div>
+                  <div class="c3">The room is situated almost within the kitchen many of his books adorning the walls.
+                       Fun included.</div>
+                       <div class="book_event"> Ready to book your event?</div>
+                       
+              </div>
+</body>
+</html>

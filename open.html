@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Emilys+Candy|Felipa|Italianno|Lakki+Reddy|Lato|Markazi+Text|Milonga|Miss+Fajardose|Pacifico|Quintessential|Roboto|Shrikhand|Tangerine|UnifrakturMaguntia" rel="stylesheet">
+    <title>Document</title>
+    <style> 
+        html,body{
+          
+              margin: 0px;
+              padding: 0px;
+          }
+          *
+          {
+              box-sizing: border-box;
+          }
+          .container1
+          {
+              width: 100%;
+              height: 100vh;
+            /*  border: 2px solid red;*/
+              position: relative;
+             background-image: url('plate.jpg');
+             background-size: 100% 100%;
+            opacity: 0.9;
+            
+      
+          }
+          .grill
+      {
+          width: 25%;
+          height: 25%;
+         /* border: 2px solid black;*/
+          position: absolute; 
+          top:0%;
+          left: 5%;
+          font-family: 'Italianno', cursive;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 50px;
+          color: white;
+          
+      }
+      .menu
+      {
+          width: 10%;
+          height: 25%;
+         /* border: 2px solid white;*/
+          position: absolute; 
+          top:3%;
+          right: 35%; 
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+      }
+      .reservation
+      {
+          width: 10%;
+          height: 25%;
+         /* border: 2px solid white;*/
+          position: absolute; 
+          top:3%;
+          right:25%; 
+          display: flex;
+          justify-content: center;
+          align-items: center;
+       
+      }
+      .contact
+      {
+          width: 10%;
+          height: 25%;
+         /* border: 2px solid white;*/
+          position: absolute; 
+          top:3%;
+          right:15%; 
+          display: flex;
+          justify-content: center;
+          align-items: center;
+         
+      }
+      .galary
+      {
+          width: 10%;
+          height: 25%;
+        /*  border: 2px solid white;*/
+          position: absolute; 
+          top:3%;
+          right:5%; 
+          display: flex;
+          justify-content: center;
+          align-items: center;
+         
+      }
+      a{
+          color:white;
+          font-size: 18px;
+          text-underline-position:auto;
+      }
+      .event
+    {
+        width: 30%;
+        height: 25%;
+      /* border: 2px solid white;*/
+        position: absolute; 
+        top:35%;
+        right:35%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Italianno', cursive;
+        color: white;
+        font-size: 80px;
+      
+    }
+    .share
+        {
+            width: 20%;
+            height: 3%;
+            left: 50%;
+          /*  border: 2px solid black;*/
+            transform: translateX(-50%);
+            top: 25%;
+            position: absolute;
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        text-underline-position: auto;
+        color: black;
+      
+            
+        }
+        .share>a{
+            
+            text-underline-position: below;
+            color:black;
+        
+        }
+        .container2
+        {
+            width: 100%;
+              height: 100vh;
+        /* border: 2px solid red;*/
+              position: relative;
+              background-color: black;
+        }
+        .text1
+    {
+        width: 45%;
+        height: 8%;
+       /* border: 2px solid red;*/
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        color: white;
+        font-size: 40px;
+        
+    }
+    .share2
+        {
+            width: 20%;
+            height: 3%;
+            left: 5%;
+         /*   border: 2px solid white;*/
+           
+            top: 30%;
+            position: absolute;
+            display: flex;
+           justify-content: center;
+            align-items: center;
+            text-underline-position: auto;
+            color: white;
+      
+            
+        }
+        .share2>a{
+            
+            text-underline-position: below;
+            color:white;
+        
+        }
+        .email
+        {
+            
+            width: 20%;
+            height: 10%;
+            left: 55%;
+           /* border: 2px solid white;*/
+           
+            top: 12%;
+            position: absolute;
+            display: flex;
+           justify-content: center;
+            align-items: center;
+            color:white;
+        }
+        .best
+        {
+            width: 35%;
+            height: 5%;
+            left: 55%;
+           /* border: 2px solid white;*/
+            top: 25%;
+            position: absolute;
+            
+           font-size: 20px;
+            color:white;
+        }
+        .days
+        {
+            width: 20%;
+            height: 30%;
+            left: 55%;
+           /* border: 2px solid white;*/
+            top: 34%;
+            position: absolute;
+            font-size: 20px;
+            color:white;
+        }
+        .map
+        {
+         
+            width: 30%;
+            height: 15%;
+            left: 35%;
+           /* border: 2px solid white;*/
+            top: 60%;
+            position: absolute;
+            font-size: 35px;
+            color:white;  
+            display: flex;
+           justify-content: center;
+            align-items: center; 
+        }
+        .container3
+        {
+            width: 100%;
+              height: 50vh;
+            /* border: 2px solid red;*/
+              position: relative;
+              background-color: black;
+              color:white;  
+            display: flex;
+           justify-content: center;
+            align-items: center; 
+        }
+        .map_box
+        {
+            width: 70%;
+              height: 110%;
+           /*  border: 2px solid red;*/
+              position: relative;
+              top: -35%;
+              
+            
+        }
+        .container4
+        {
+            width: 100%;
+              height: 100vh;
+            /* border: 2px solid red;*/
+              position: relative;
+              background-color: black;
+              color:white;  
+            display: flex;
+           justify-content: center;
+            align-items: center; 
+        }
+        .enquire
+        {
+            width: 45%;
+            height: 12%;
+           /* border: 2px solid red;*/
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 30px;
+            text-align: center;
+
+        }
+        .img1
+        {
+            width: 25%;
+            height: 68%;
+           /* border: 2px solid red;*/
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            background-image: url('contact.jpg');
+            background-size: 100% 100%;
+            z-index: 100;
+        }
+        .line1
+        {
+            width: 90%;
+            height: 0%;
+            border: 1px solid white;
+            position: absolute;
+            top: 45%;
+            left: 5%;
+        }
+        .line2
+        {
+            width: 90%;
+            height: 0%;
+            border: 1px solid white;
+            position: absolute;
+            top: 65%;
+            left: 5%;
+        }
+        input[type="text"] 
+        {
+            background-color: black;
+            color: white;
+            top: 37%;
+            left: 40%;
+            font-size: 18px;
+            text-align: center;
+            border: none;
+            
+         
+        }
+        input[type="email"] 
+        {
+            background-color: black;
+            color: white;
+            top: 37%;
+            left: 55%;
+            font-size: 18px;
+            text-align: center;
+            border: none;
+            
+         
+        }
+        input[type="number"] 
+        {
+            background-color: black;
+            color: white;
+            top: 37%;
+            left: 70%;
+            font-size: 18px;
+            text-align: center;
+            border: none;
+            
+         
+        }
+        input[type="message"] 
+        {
+            background-color: black;
+            color: white;
+            top: 57%;
+            left: 40%;
+            font-size: 18px;
+            text-align: center;
+            border: none;
+            
+         
+        }
+        .send
+        {
+            width: 15%;
+            height: 12%;
+            position: absolute;
+            border: 1px solid white;
+            top: 73%;
+            left: 53%;
+            font-size: 25px;
+            display: flex;
+           justify-content: center;
+            align-items: center; 
+            letter-spacing: 2px;
+            
+            
+        }
+        .send>a{
+            text-decoration: none;
+            color: rgb(172, 165, 165);
+        }
+
+
+      </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="grill"><b>GRILLING</b></div>
+                        <div class="menu"><a href="menu.html">MENU</a></div>
+                        <div class="reservation"><a href="reservation.html">RESERVATION</a></div>
+                        <div class="contact"><a href="open.html">CONTACT</a></div>
+                        <div class="galary"><a href="gallery/gallery.html">GALLERY</a></div>
+                        <div class="event">Have a question?</div>
+                        <div class="share">Share On:<a href="https://www.facebook.com/">Facebook/ </a>
+                    <a href="https://twitter.com/">Twitter/ </a><a href="https://in.pinterest.com/">Pinterest</a></div>
+                        
+   </div> 
+    </div>
+
+    <div class="container2">
+        <div class="text1">We are open daily, we server seasonal food, fish and meat. 
+            All freshly cooked.</div>
+            <div class="share2">Share On:<a href="https://www.facebook.com/">Facebook/ </a>
+        <a href="https://twitter.com/">Twitter/ </a><a href="https://in.pinterest.com/">Pinterest</a></div>
+        <div class="email">+12 665 666 667<br>
+                hello@marco.com</div>
+                <div class="best">We are open daily to serve best food possible.</div>
+                <div class="days">Monday –  Friday: 9am – 4pm<br><br>
+                        Saturaday: 9am – 4pm<br><br>
+                        Sunday: 9am – 4pm</div>
+                        <div class="map">We are here, come by.</div>
+                       
+       
+    </div>
+    <div class="container3">
+            <div class="map_box"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d848295.9861393345!2d150.37152490226384!3d-33.846975938661174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632a850!2sSydney+NSW%2C+Australia!5e0!3m2!1sen!2sin!4v1531576963219" width="1050" height="400" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+            
+    </div>
+    <div class="container4">
+        <div class="enquire">For any enquiries please use the form below</div>
+        <div class="img1"></div>
+        <div class="line1"></div>
+        <form action="">
+                <input type="text" name="" placeholder="NAME" style="position: absolute">
+                <input type="email" name="" placeholder="EMAIL" style="position: absolute">
+                <input type="number"  name="" placeholder="PHONE" style="position: absolute">
+                <input type="message"  name="" placeholder="MESSAGE" style="position: absolute">
+            </form>
+        <div class="line2"></div>
+        <div class="send"><a href="">SEND</a></div>
+       
+    </div>
+</body>
+</html>

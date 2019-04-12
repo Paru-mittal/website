@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Emilys+Candy|Felipa|Italianno|Lakki+Reddy|Lato|Markazi+Text|Milonga|Miss+Fajardose|Pacifico|Quintessential|Roboto|Shrikhand|Tangerine|UnifrakturMaguntia" rel="stylesheet">
+    <title>Document</title>
+    <style>
+      html,body{
+           
+           margin: 0px;
+           padding: 0px;
+           height: 100%;
+          
+       }
+       *
+       {
+           box-sizing: border-box;
+       }
+     
+       
+   
+    .block
+    {
+        width: 100%;
+        height: 20%;
+      /*  border: 2px solid red;*/
+        position: relative;
+        background-color: black;
+    }
+    .grill
+       {
+           width: 25%;
+           height: 50%;
+           border: 2px solid black;
+           position: absolute; 
+           top:30%;
+           left: 5%;
+           font-family: 'Italianno', cursive;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           font-size: 50px;
+           color: white;
+           z-index: 1000;
+       }
+       .menu
+       {
+           width: 10%;
+           height: 25%;
+          /* border: 2px solid white;*/
+           position: absolute; 
+           top:45%;
+           right: 35%; 
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           
+       }
+       .reservation
+       {
+           width: 10%;
+           height: 25%;
+          /* border: 2px solid white;*/
+           position: absolute; 
+           top:45%;
+           right:25%; 
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        
+       }
+       .contact
+       {
+           width: 10%;
+           height: 25%;
+          /* border: 2px solid white;*/
+           position: absolute; 
+           top:45%;
+           right:15%; 
+           display: flex;
+           justify-content: center;
+           align-items: center;
+          
+       }
+       .galary
+       {
+           width: 10%;
+           height: 25%;
+         /*  border: 2px solid white;*/
+           position: absolute; 
+           top:45%;
+           right:5%; 
+           display: flex;
+           justify-content: center;
+           align-items: center;
+          
+       }
+       a{
+           color: rgb(224, 54,6);
+           font-size: 18px;
+           text-underline-position:auto;
+       }
+       .container2
+    {
+        
+        width: 100%;
+        height: 170%;
+     /*   border: 2px solid red;*/
+        position: relative;
+        background-color: black;
+       
+        
+    }
+    .text1
+    {
+        width: 45%;
+        height: 8%;
+       /* border: 2px solid red;*/
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        color: white;
+        font-size: 40px;
+        
+    }
+    .share
+        {
+            width: 20%;
+            height: 3%;
+            left: 5%;
+         /*   border: 2px solid white;*/
+           
+            top: 20%;
+            position: absolute;
+            display: flex;
+           justify-content: center;
+            align-items: center;
+            text-underline-position: auto;
+            color: white;
+      
+            
+        }
+        .share>a{
+            
+            text-underline-position: below;
+            color:white;
+        
+        }
+        .line1
+       {
+           width: 90%;
+           height: 0%;
+           border:0.8px solid white;
+           position: absolute;
+           top: 30%;
+           left: 5%;
+       }
+       .starters
+       {
+           width: 15%;
+           height: 5%;
+          /* border: 2px solid white;*/
+           position: absolute;
+           top: 33%;
+           left: 5%;
+           font-size: 40px;
+           color: rgb(224, 54,6);
+           
+       }
+       .s_text
+       {
+        width: 45%;
+           height: 3%;
+         /*  border: 2px solid white;*/
+           position: absolute;
+           top: 38%;
+           left: 5%;
+           font-size: 18px;
+           color: rgb(167, 164, 164);
+       }
+       .slider1{
+           width: 28%;
+           height: 40%;
+           border: 2px solid white;
+           position: absolute;
+           top: 35%;
+           right:5%;
+           transition: 2s;
+           
+       }
+       .dish1
+       {
+           width: 25%;
+           height: 3%;
+          /* border: 2px solid red;*/
+           position: absolute;
+           top: 45%;
+           left: 5%;
+           font-size: 23px;
+           color: white;
+       }
+       .line2
+       {
+        width: 25%;
+           height: 0%;
+           border: 0.8px solid white;
+           position: absolute;
+           top: 48%;
+           left: 5%;
+           color: white;
+       }
+       .in1
+       {
+           width: 35%;
+           height: 3%;
+         /*  border: 2px solid red;*/
+           position: absolute;
+           top: 48%;
+           left: 5%;
+           font-size: 20px;
+           color: white;
+           font-family: Felipa;
+       }
+       .dish2
+       {
+           width: 25%;
+           height: 3%;
+          /* border: 2px solid red;*/
+           position: absolute;
+           top: 54%;
+           left: 5%;
+           font-size: 23px;
+           color: white;
+       }
+       .line3
+       {
+        width: 25%;
+           height: 0%;
+           border: 0.8px solid white;
+           position: absolute;
+           top: 57%;
+           left: 5%;
+           color: white;
+       }
+       .in2
+       {
+           width: 35%;
+           height: 3%;
+          /* border: 2px solid red;*/
+           position: absolute;
+           top: 57%;
+           left: 5%;
+           font-size: 20px;
+           color: white;
+           font-family: Felipa;
+       }
+       .dish3
+       {
+           width: 25%;
+           height: 3%;
+          /* border: 2px solid red;*/
+           position: absolute;
+           top: 63%;
+           left: 5%;
+           font-size: 23px;
+           color: white;
+       }
+       .line4
+       {
+        width: 25%;
+           height: 0%;
+           border: 0.8px solid white;
+           position: absolute;
+           top: 66%;
+           left: 5%;
+           color: white;
+       }
+       .in3
+       {
+           width: 35%;
+           height: 3%;
+          /* border: 2px solid red;*/
+           position: absolute;
+           top: 66%;
+           left: 5%;
+           font-size: 20px;
+           color: white;
+           font-family: Felipa;
+       }
+       .dish4
+       {
+           width: 25%;
+           height: 3%;
+           /*border: 2px solid red;*/
+           position: absolute;
+           top: 72%;
+           left: 5%;
+           font-size: 23px;
+           color: white;
+       }
+       .line5
+       {
+        width: 25%;
+           height: 0%;
+           border: 0.8px solid white;
+           position: absolute;
+           top: 75%;
+           left: 5%;
+           color: white;
+       }
+       .in4
+       {
+           width: 35%;
+           height: 3%;
+          /* border: 2px solid red;*/
+           position: absolute;
+           top: 75%;
+           left: 5%;
+           font-size: 20px;
+           color: white;
+           font-family: Felipa;
+       }
+       .dish5
+       {
+           width: 25%;
+           height: 3%;
+          /* border: 2px solid red;*/
+           position: absolute;
+           top: 81%;
+           left: 5%;
+           font-size: 23px;
+           color: white;
+       }
+       .line6
+       {
+        width: 25%;
+           height: 0%;
+           border: 0.8px solid white;
+           position: absolute;
+           top: 84%;
+           left: 5%;
+           color: white;
+       }
+       .in5
+       {
+           width: 37%;
+           height: 3%;
+          /* border: 2px solid red;*/
+           position: absolute;
+           top: 84%;
+           left: 5%;
+           font-size: 20px;
+           color: white;
+           font-family: Felipa;
+       }
+       .dish6
+       {
+           width: 25%;
+           height: 3%;
+          /* border: 2px solid red;*/
+           position: absolute;
+           top: 90%;
+           left: 5%;
+           font-size: 23px;
+           color: white;
+       }
+       .line7
+       {
+        width: 25%;
+           height: 0%;
+           border: 0.8px solid white;
+           position: absolute;
+           top: 93%;
+           left: 5%;
+           color: white;
+       }
+       .in6
+       {
+           width: 37%;
+           height: 3%;
+          /* border: 2px solid red;*/
+           position: absolute;
+           top: 93%;
+           left: 5%;
+           font-size: 20px;
+           color: white;
+           font-family: Felipa;
+       }
+       .container3
+         {
+            width: 100%;
+           height: 140%;
+         /*  border: 2px solid red;*/
+           position: relative; 
+           background-color: black;
+         }
+         .mains
+       {
+           width: 15%;
+           height: 5%;
+         /*  border: 2px solid white;*/
+           position: absolute;
+           top: 10%;
+           left: 5%;
+           font-size: 40px;
+           color: rgb(224, 54,6);
+          
+           }
+       .m_text
+       {
+        width: 45%;
+           height: 5%;
+          /* border: 2px solid white;*/
+           position: absolute;
+           top: 16%;
+           left: 5%;
+           font-size: 18px;
+           color: rgb(167, 164, 164);
+       }
+       .slider2{
+           width: 28%;
+           height: 55%;
+           border: 2px solid white;
+           position: absolute;
+           top: 12%;
+           right:5%;
+           transition: 2s;
+           background-image: url('ax1.jpg');
+           background-size: 100% 100%;
+           
+       }
+       .item1
+       {
+           width: 25%;
+           height: 3%;
+          /* border: 2px solid red;*/
+           position: absolute;
+           top: 30%;
+           left: 5%;
+           font-size: 23px;
+           color: white;
+       }
+       .break1
+       {
+        width: 25%;
+           height: 0%;
+           border: 0.8px solid white;
+           position: absolute;
+           top: 33%;
+           left: 5%;
+           color: white;
+       }
+       .set1
+       {
+           width: 35%;
+           height: 3%;
+         /*  border: 2px solid red;*/
+           position: absolute;
+           top: 33%;
+           left: 5%;
+           font-size: 20px;
+           color: white;
+           font-family: Felipa;
+       }
+       .item2
+       {
+           width: 32%;
+           height: 3%;
+          /* border: 2px solid red;*/
+           position: absolute;
+           top: 39%;
+           left: 5%;
+           font-size: 23px;
+           color: white;
+       }
+       .break2
+       {
+        width: 25%;
+           height: 0%;
+           border: 0.8px solid white;
+           position: absolute;
+           top: 42%;
+           left: 5%;
+           color: white;
+       }
+       .set2
+       {
+           width: 35%;
+           height: 3%;
+         /*  border: 2px solid red;*/
+           position: absolute;
+           top: 42%;
+           left: 5%;
+           font-size: 20px;
+           color: white;
+           font-family: Felipa;
+       }
+       .item3
+       {
+           width: 28%;
+           height: 3%;
+          /* border: 2px solid red;*/
+           position: absolute;
+           top: 48%;
+           left: 5%;
+           font-size: 23px;
+           color: white;
+       }
+       .break3
+       {
+        width: 25%;
+           height: 0%;
+           border: 0.8px solid white;
+           position: absolute;
+           top: 51%;
+           left: 5%;
+           color: white;
+       }
+       .set3
+       {
+           width: 35%;
+           height: 3%;
+         /*  border: 2px solid red;*/
+           position: absolute;
+           top: 51%;
+           left: 5%;
+           font-size: 20px;
+           color: white;
+           font-family: Felipa;
+       }
+       .item4
+       {
+           width: 28%;
+           height: 3%;
+          /* border: 2px solid red;*/
+           position: absolute;
+           top: 57%;
+           left: 5%;
+           font-size: 23px;
+           color: white;
+       }
+       .break4
+       {
+        width: 25%;
+           height: 0%;
+           border: 0.8px solid white;
+           position: absolute;
+           top: 60%;
+           left: 5%;
+           color: white;
+       }
+       .set4
+       {
+           width: 35%;
+           height: 3%;
+         /*  border: 2px solid red;*/
+           position: absolute;
+           top: 60%;
+           left: 5%;
+           font-size: 20px;
+           color: white;
+           font-family: Felipa;
+       }
+       .item5
+       {
+           width: 28%;
+           height: 3%;
+          /* border: 2px solid red;*/
+           position: absolute;
+           top: 66%;
+           left: 5%;
+           font-size: 23px;
+           color: white;
+       }
+       .break5
+       {
+        width: 25%;
+           height: 0%;
+           border: 0.8px solid white;
+           position: absolute;
+           top: 69%;
+           left: 5%;
+           color: white;
+       }
+       .set5
+       {
+           width: 35%;
+           height: 3%;
+         /*  border: 2px solid red;*/
+           position: absolute;
+           top: 69%;
+           left: 5%;
+           font-size: 20px;
+           color: white;
+           font-family: Felipa;
+       }
+       .item6
+       {
+           width: 28%;
+           height: 3%;
+          /* border: 2px solid red;*/
+           position: absolute;
+           top: 75%;
+           left: 5%;
+           font-size: 23px;
+           color: white;
+       }
+       .break6
+       {
+        width: 25%;
+           height: 0%;
+           border: 0.8px solid white;
+           position: absolute;
+           top: 78%;
+           left: 5%;
+           color: white;
+       }
+       .set6
+       {
+           width: 35%;
+           height: 3%;
+         /*  border: 2px solid red;*/
+           position: absolute;
+           top: 78%;
+           left: 5%;
+           font-size: 20px;
+           color: white;
+           font-family: Felipa;
+       }
+       .item7
+       {
+           width: 28%;
+           height: 3%;
+          /* border: 2px solid red;*/
+           position: absolute;
+           top: 84%;
+           left: 5%;
+           font-size: 23px;
+           color: white;
+       }
+       .break7
+       {
+        width: 25%;
+           height: 0%;
+           border: 0.8px solid white;
+           position: absolute;
+           top: 87%;
+           left: 5%;
+           color: white;
+       }
+       .set7
+       {
+           width: 35%;
+           height: 3%;
+         /*  border: 2px solid red;*/
+           position: absolute;
+           top: 87%;
+           left: 5%;
+           font-size: 20px;
+           color: white;
+           font-family: Felipa;
+       }
+       .container4
+         {
+            width: 100%;
+           height: 120%;
+         /*  border: 2px solid red;*/
+           position: relative; 
+           background-color: black;
+         }
+         .desert
+       {
+           width: 15%;
+           height: 5%;
+          /* border: 2px solid white;*/
+           position: absolute;
+           top: 10%;
+           left: 5%;
+           font-size: 40px;
+           color: rgb(224, 54,6);
+          
+           }
+       .d_text
+       {
+        width: 45%;
+           height: 5%;
+           /*border: 2px solid white;*/
+           position: absolute;
+           top: 16%;
+           left: 5%;
+           font-size: 18px;
+           color: rgb(167, 164, 164);
+       }
+       .slider3{
+           width: 28%;
+           height: 55%;
+           border: 2px solid white;
+           position: absolute;
+           top: 12%;
+           right:5%;
+           transition: 2s;
+           background-image: url('ice3.jpg');
+           background-size: 100% 100%;
+           
+       }
+       .cake1
+       {
+           width: 25%;
+           height: 3%;
+          /* border: 2px solid red;*/
+           position: absolute;
+           top: 25%;
+           left: 5%;
+           font-size: 23px;
+           color: white;
+       }
+       .end1
+       {
+        width: 25%;
+           height: 0%;
+           border: 0.8px solid white;
+           position: absolute;
+           top: 28%;
+           left: 5%;
+           color: white;
+       }
+       .serve1
+       {
+           width: 35%;
+           height: 3%;
+         /*  border: 2px solid red;*/
+           position: absolute;
+           top: 28%;
+           left: 5%;
+           font-size: 20px;
+           color: white;
+           font-family: Felipa;
+       }
+       .cake2
+       {
+           width: 25%;
+           height: 3%;
+          /* border: 2px solid red;*/
+           position: absolute;
+           top: 36%;
+           left: 5%;
+           font-size: 23px;
+           color: white;
+       }
+       .end2
+       {
+        width: 25%;
+           height: 0%;
+           border: 0.8px solid white;
+           position: absolute;
+           top: 39%;
+           left: 5%;
+           color: white;
+       }
+       .serve2
+       {
+           width: 35%;
+           height: 3%;
+         /*  border: 2px solid red;*/
+           position: absolute;
+           top: 39%;
+           left: 5%;
+           font-size: 20px;
+           color: white;
+           font-family: Felipa;
+       }
+       .cake3
+       {
+           width: 25%;
+           height: 3%;
+          /* border: 2px solid red;*/
+           position: absolute;
+           top: 47%;
+           left: 5%;
+           font-size: 23px;
+           color: white;
+       }
+       .end3
+       {
+        width: 25%;
+           height: 0%;
+           border: 0.8px solid white;
+           position: absolute;
+           top: 50%;
+           left: 5%;
+           color: white;
+       }
+       .serve3
+       {
+           width: 35%;
+           height: 3%;
+         /*  border: 2px solid red;*/
+           position: absolute;
+           top: 50%;
+           left: 5%;
+           font-size: 20px;
+           color: white;
+           font-family: Felipa;
+       }
+       .cake4
+       {
+           width: 25%;
+           height: 3%;
+          /* border: 2px solid red;*/
+           position: absolute;
+           top: 58%;
+           left: 5%;
+           font-size: 23px;
+           color: white;
+       }
+       .end4
+       {
+        width: 25%;
+           height: 0%;
+           border: 0.8px solid white;
+           position: absolute;
+           top: 61%;
+           left: 5%;
+           color: white;
+       }
+       .serve4
+       {
+           width: 35%;
+           height: 3%;
+         /*  border: 2px solid red;*/
+           position: absolute;
+           top: 61%;
+           left: 5%;
+           font-size: 20px;
+           color: white;
+           font-family: Felipa;
+       }
+       .cake5
+       {
+           width: 25%;
+           height: 3%;
+          /* border: 2px solid red;*/
+           position: absolute;
+           top: 69%;
+           left: 5%;
+           font-size: 23px;
+           color: white;
+       }
+       .end5
+       {
+        width: 25%;
+           height: 0%;
+           border: 0.8px solid white;
+           position: absolute;
+           top: 72%;
+           left: 5%;
+           color: white;
+       }
+       .serve5
+       {
+           width: 35%;
+           height: 3%;
+         /*  border: 2px solid red;*/
+           position: absolute;
+           top: 72%;
+           left: 5%;
+           font-size: 20px;
+           color: white;
+           font-family: Felipa;
+       }
+       .cake6
+       {
+           width: 25%;
+           height: 3%;
+          /* border: 2px solid red;*/
+           position: absolute;
+           top: 80%;
+           left: 5%;
+           font-size: 23px;
+           color: white;
+       }
+       .end6
+       {
+        width: 25%;
+           height: 0%;
+           border: 0.8px solid white;
+           position: absolute;
+           top: 83%;
+           left: 5%;
+           color: white;
+       }
+       .serve6
+       {
+           width: 35%;
+           height: 3%;
+         /*  border: 2px solid red;*/
+           position: absolute;
+           top: 83%;
+           left: 5%;
+           font-size: 20px;
+           color: white;
+           font-family: Felipa;
+       }
+         
+ </style>
+</head>
+<body>
+    <div class="block">
+        <div class="grill"><b>GRILLING</b></div>
+        <div class="menu"><a href="menu.html">MENU</a></div>
+        <div class="reservation"><a href="reservation.html">RESERVATION</a></div>
+        <div class="contact"><a href="open.html">CONTACT</a></div>
+        <div class="galary"><a href="gallery/gallery.html">GALLERY</a></div>
+    </div> 
+    <div class="container2">
+            <div class="dish1"><span>roasted prawns with coriander  </span></div>
+            <div class="line2"></div>
+            <div class="in1">corn purée, corn, bell pepper ketchup, lamb’s lettuce</div>
+            <div class="dish2"><span>beetroot carpaccio</span></div>
+            <div class="line3"></div>
+            <div class="in2">marinated salmon with dill, beetroot, hazelnuts, beetroot leaves</div>
+            <div class="dish3"><span>foie gras terrine</span></div>
+            <div class="line4"></div>
+            <div class="in3">cranberry jelly, pumpkin purée and sponge, pickled mushrooms, figs</div>
+            <div class="dish4"><span>consommé of beef ribs</span></div>
+            <div class="line5"></div>
+            <div class="in4">julienne vegetables, crunchy noodles, beef</div>
+            <div class="dish5"><span>salad with blue cheese</span></div>
+            <div class="line6"></div>
+            <div class="in5">pears marinated in port wine and lemon, walnuts,  elderberry dressing</div>
+            <div class="dish6"><span>tom kha kai</span></div>
+            <div class="line7"></div>
+            <div class="in6">tarragon mayonnaise, marinated shimeji mushrooms, black toast, herbs</div>
+        <div class="text1">Our menu is based on local products and passionate cooking</div>
+            <div class="share">Share On:<a href="https://www.facebook.com/">Facebook/ </a>
+        <a href="https://twitter.com/">Twitter/ </a><a href="https://in.pinterest.com/">Pinterest</a></div>
+        <div class="line1"></div>
+         <div class="starters">Starters</div>
+    <div class="s_text">Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis.</div>
+    <div class="slider1">
+         <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+        <div class="ws_images"><ul>
+                <li><img src="data1/images/a.jpg" alt="a" title="a" id="wows1_0"/></li>
+                <li><img src="data1/images/b.jpg" alt="b" title="b" id="wows1_1"/></li>
+                <li><img src="data1/images/c.jpg" alt="c" title="c" id="wows1_2"/></li>
+                <li><img src="data1/images/d.jpg" alt="d" title="d" id="wows1_3"/></li>
+                <li><a href="http://wowslider.net"><img src="data1/images/g.jpg" alt="css image slider" title="g" id="wows1_4"/></a></li>
+                <li><img src="data1/images/tarttare.jpg" alt="tarttare" title="tarttare" id="wows1_5"/></li>
+            </ul></div>
+        <div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery carousel</a> by WOWSlider.com v8.8</div>
+        <div class="ws_shadow"></div>
+        </div>	
+        <script type="text/javascript" src="engine1/wowslider.js"></script>
+        <script type="text/javascript" src="engine1/script.js"></script>
+        <!-- End WOWSlider.com BODY section -->
+    </div>
+    </div>
+    <div class="container3">
+            <div class="mains">Mains</div>
+            <div class="m_text">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. 
+                Maecenas faucibus mollis interdum.</div>
+                <div class="item1">veal mini escalopes</div>
+                <div class="break1"></div>
+                <div class="set1">potato salad, cornichons, mustard, marinated beetroot</div>
+                <div class="item2">ravioli filled with baked pumpkin and goat cheese</div>
+                <div class="break2"></div>
+                <div class="set2">ricotta sauce, basil foam, roasted nuts</div>
+                <div class="item3">teriyaki salmon</div>
+                <div class="break3"></div>
+                <div class="set3">zucchini, sugar snap peas, noodles, shiitake mushrooms, spring onion, lime</div>
+                <div class="item4">pike-perch</div>
+                <div class="break4"></div>
+                <div class="set4">celery root purée, buttered carrots, sous vide leeks, herbs</div>
+                <div class="item5">tafelspitz</div>
+                <div class="break5"></div>
+                <div class="set5">celery, carrot, saffron potatoes, spring onion, dijon mustard, horseradish</div>
+                <div class="item6">fish of the day</div>
+                <div class="break6"></div>
+                <div class="set6">different fish every day of the week, ask stuff for assistance</div>
+                <div class="item7">beef rib sous vide</div>
+                <div class="break7"></div>
+                <div class="set7">homemade hash, white cabbage purée, potatoes with barley, marjoram sauce</div>
+            <div class="slider2"></div>
+              
+    </div>
+    <div class="container4">
+        <div class="desert">Desserts</div>
+        <div class="d_text">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam id dolor id.</div>
+        <div class="cake1">apple strudel</div>
+        <div class="end1"></div>
+        <div class="serve1">punch ice cream, cocoa sponge, roasted raisins and walnuts with rum</div>
+
+        <div class="cake2">chocolate cheesecake</div>
+        <div class="end2"></div>
+        <div class="serve2">banana cream, raspberries, banana sorbet, white and milk chocolate</div>
+
+        <div class="cake3">curd cheese dumplings</div>
+        <div class="end3"></div>
+        <div class="serve3">plum sauce with plum brandy, curd chips, caramelized plums, poppy seed ice cream</div>
+
+        <div class="cake4">selection of ice creams and sorbets</div>
+        <div class="end4"></div>
+        <div class="serve4">various flavours of freslhy made sweet treats</div>
+
+        <div class="cake5">selection of european cheeses</div>
+        <div class="end5"></div>
+        <div class="serve5">grapes, celery, seasonal chutney, homemade brioche</div>
+
+        <div class="cake6">Cabernet Sauvignon</div>
+        <div class="end6"></div>
+        <div class="serve6">red wine, best with meat and game</div>
+        <div class="slider3"></div>
+    </div>
+</body>
+</html>

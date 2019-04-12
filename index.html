@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Emilys+Candy|Felipa|Italianno|Lakki+Reddy|Lato|Markazi+Text|Milonga|Miss+Fajardose|Pacifico|Quintessential|Roboto|Shrikhand|Tangerine|UnifrakturMaguntia" rel="stylesheet">
+    <link rel="stylesheet" href="animate.css">
+    <title>Document</title>
+    <style>
+     html,body{
+        
+        margin: 0px;
+        padding: 0px;
+    }
+    *
+    {
+        box-sizing: border-box;
+    }
+    .container1
+    {
+        width: 100%;
+        height: 200vh;
+       /* border: 2px solid red;*/   
+        position: relative;
+        background-color: rgb(30, 35, 41);
+
+    }
+    .block
+    {
+        width: 100%;
+        height: 10%;
+      /*  border: 2px solid black;*/
+        position: absolute;
+        background-color: black;
+
+    }
+    .grill
+    {
+        width: 25%;
+        height: 50%;
+      /*  border: 2px solid black;*/
+        position: absolute; 
+        top:30%;
+        left: 5%;
+        font-family: 'Italianno', cursive;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        color: white;
+    }
+    .menu
+    {
+        width: 10%;
+        height: 25%;
+       /* border: 2px solid white;*/
+        position: absolute; 
+        top:45%;
+        right: 35%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .reservation
+    {
+        width: 10%;
+        height: 25%;
+       /* border: 2px solid white;*/
+        position: absolute; 
+        top:45%;
+        right:25%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+    }
+    .contact
+    {
+        width: 10%;
+        height: 25%;
+       /* border: 2px solid white;*/
+        position: absolute; 
+        top:45%;
+        right:15%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .galary
+    {
+        width: 10%;
+        height: 25%;
+      /*  border: 2px solid white;*/
+        position: absolute; 
+        top:45%;
+        right:5%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    a{
+        color: rgb(224, 54,6);
+        font-size: 18px;
+        text-underline-position:auto;
+    }
+    .photo1
+    {
+        width: 20%;
+        height: 35%;
+       /* border: 2px solid red;*/
+        position: absolute;
+        top: 12%;
+        left: 7%;
+        background-image: url('team4.jpg');
+        background-size: 100% 100%;
+        transition: 1s;
+
+    }
+    .photo2
+    {
+        width: 20%;
+        height: 22%;
+       /* border: 2px solid red;*/
+        position: absolute;
+        top: 12%;
+        left: 29%;
+        background-image: url('menu.jpg');
+        background-size: 100% 100%;
+        transition: 1s;
+
+    }
+    .photo3
+    {
+        width: 20%;
+        height: 28%;
+       /* border: 2px solid red;*/
+        position: absolute;
+        top: 12%;
+        left: 51%;
+        background-image: url('food1.jpg');
+        background-size:100% 100%;
+        transition: 1s;
+    
+
+
+    }
+    .photo4
+    {
+        width: 20%;
+        height: 35%;
+       /* border: 2px solid red;*/
+        position: absolute;
+        top: 12%;
+        right: 7%;
+        background-image: url('rest2.jpg');
+        background-size:100% 100%;
+        transition: 1s;
+
+    }
+    .team
+    {
+        width: 40%;
+        height: 7%;
+       /* border: 2px solid white;*/
+        position: absolute; 
+        bottom:5%;
+        left: 7%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    .menucard
+    {
+       
+        width: 40%;
+        height: 13%;
+        /*border: 2px solid white;*/
+        position: absolute; 
+        bottom:5%;
+        left: 10%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .food_link
+    {
+        
+        width: 40%;
+        height: 10%;
+       /* border: 2px solid white;*/
+        position: absolute; 
+        bottom:5%;
+        right: 7%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    .dining
+    {
+        width: 40%;
+        height: 10%;
+      /*  border: 2px solid white;*/
+        position: absolute; 
+        bottom:5%;
+        right: 7%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text
+    {
+        
+        width: 80%;
+        height: 40%;
+       /* border: 2px solid white;*/
+        position: absolute; 
+        top:35%;
+        left: 7%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Italianno;
+        color: white;
+        font-size: 40px;
+    }
+    .photo5
+    {
+        width: 20%;
+        height: 35%;
+       /* border: 2px solid red;*/
+        position: absolute;
+        top: 36%;
+        left: 29%;
+        background-image: url('open.jpg');
+        background-size: 100% 100%;
+        transition: 1s;
+    }
+    .photo6
+    {
+        width: 20%;
+        height: 29%;
+      /*  border: 2px solid red;*/
+        position: absolute;
+        top: 42%;
+        left: 51%;
+        background-image: url('lamp.jpg');
+        background-size: 100% 100%; 
+        transition: 1s;
+    }
+    .open_hours
+    {
+        width: 55%;
+        height: 10%;
+      /*  border: 2px solid white;*/
+        position: absolute; 
+        bottom:0%;
+        left:16%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .booking
+    {
+        width: 50%;
+        height: 10%;
+       /* border: 2px solid white;*/
+        position: absolute; 
+        bottom:3%;
+        left: 15%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text2
+    {
+        width: 70%;
+        height: 40%;
+      /*  border: 2px solid white;*/
+        position: absolute; 
+        top:45%;
+        left: 10%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: Italianno;
+        font-size: 45px;
+
+    }
+    .video1
+    {
+        width: 20%;
+        height: 22%;
+       /* border: 2px solid red;*/
+        position: absolute;
+        top: 49%;
+        left: 7%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+       background-color: black;
+
+       
+    }
+    .video2
+    {
+        width: 20%;
+        height: 22%;
+       /* border: 2px solid red;*/
+        position: absolute;
+        top: 49%;
+        right: 7%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+     
+       background-color: black;
+        
+       
+    }
+    .box
+    {
+        width: 100%;
+        height: 25%;
+       /* border: 2px solid red;*/
+        position: absolute;
+        top: 75%;
+        background-color: black;
+    }
+    .restaurant
+    {
+        
+        width: 15%;
+        height: 3%;
+       /* border: 2px solid red;*/
+        position: absolute;
+        top: 80%;
+        left: 10%;
+        color: white;
+        font-size: 18px;
+       
+    }
+    .r_text
+    {
+        width: 15%;
+        height: 4%;
+      /*  border: 2px solid red;*/
+        position: absolute;
+        top: 83%;
+        left: 10%;
+        color: white;
+        font-size: 18px;
+    }
+    .reserve
+    {
+         
+        width: 15%;
+        height: 3%;
+       /* border: 2px solid red;*/
+        position: absolute;
+        top: 80%;
+        left: 35%;
+        color: white;
+        font-size: 18px;
+    }
+    .re_text
+    {
+        width: 15%;
+        height: 4%;
+       /* border: 2px solid red;*/
+        position: absolute;
+        top: 83%;
+        left: 35%;
+        color: white;
+        font-size: 18px;
+    }
+    .news
+    {
+         
+        width: 15%;
+        height: 3%;
+       /* border: 2px solid red;*/
+        position: absolute;
+        top: 80%;
+        left: 60%;
+        color: white;
+        font-size: 18px;
+    }
+    .n_text
+    {
+        width: 18%;
+        height: 4%;
+       /* border: 2px solid red;*/
+        position: absolute;
+        top: 83%;
+        left: 60%;
+        color: white;
+        font-size: 18px;
+    }
+    .map
+    {
+        
+        width: 15%;
+        height: 3%;
+       /* border: 2px solid red;*/
+        position: absolute;
+        top: 88%;
+        left: 10%;
+        color: white;
+        font-size: 18px;
+       
+    }
+    .map>a
+    {
+        font-size: 20px;
+        text-decoration-style: none;
+    }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="block">
+            <div class="grill"><b>GRILLING</b></div>
+            <div class="menu"><a href="menu.html">MENU</a></div>
+            <div class="reservation"><a href="reservation.html">RESERVATION</a></div>
+            <div class="contact"><a href="open.html">CONTACT</a></div>
+            <div class="galary"><a href="gallery/gallery.html">GALLERY</a></div>
+        </div>
+        <div class="photo1 slideInLeft  animated" >
+            <div class="team">
+                <a href="team.html" style="color:white
+                "><b>TEAM</b></a>
+            </div>
+        </div>
+        <div class="photo2 slideInLeft  animated">
+            <div class="menucard"><a href="menu.html" style="color: white"><b>MENU</b></a></div>
+        </div>
+        <div class="photo3 slideInLeft  animated"><div class="food_link">
+            <a href="food.html" style="color: white"><b>FOOD</b></a></div></div>
+        <div class="photo4 slideInLeft  animated">
+            <div class="text">Eating, drinking and relaxing.We think these need to be united.</div>
+            <div class="dining"><a href="dining.html" style="color: white"><b>DINING</b></a></div>
+        </div>
+        <div class="photo5 slideInLeft  animated">
+            <div class="open_hours"><a href="open.html"  style="color: white"><b>OPENING HOURS</b></a></div>
+        </div>
+        <div class="photo6 slideInLeft animated">
+            <div class="text2">When Would You Like To Visit?</div>
+            <div class="booking"><a href="reservation.html" style="color: white"><b>BOOK A TABLE</b></a></div>
+        </div>
+        <div class="video1">
+            <video controls autoplay loop height="700" width="295" >
+                <source src="food.mp4">
+            </video>
+        </div>
+        <div class="video2 ">
+                <video controls autoplay loop height="430" width="295">
+                        <source src="hotel3.mp4">
+                    </video>
+        </div>
+        <div class="box"></div>
+        <div class="restaurant"><b>Grilling Restaurant</b></div>
+        <div class="r_text">The Hoe, PL48RT<br>
+            Plymouth, UK</div>
+        <div class="reserve"><b>Reservation</b></div>
+        <div class="re_text"><a href="#" style="color: white">book@marco.com</a><br>
+            + 166 900 891</div>
+        <div class="news"><b>Newsletter</b></div>
+        <div class="n_text">Spam free, tasty news in your inbox.<br> Once a week.</div>
+        <div class="map"><a href="open.html" style="color:white;">Directions</a></div>
+    </div>
+</body>
+</html>

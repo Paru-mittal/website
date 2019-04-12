@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="animate.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Emilys+Candy|Felipa|Italianno|Lakki+Reddy|Lato|Markazi+Text|Milonga|Miss+Fajardose|Pacifico|Quintessential|Roboto|Shrikhand|Tangerine|UnifrakturMaguntia" rel="stylesheet">
+    <title>Document</title>
+    <style>
+     html,body{
+        
+        margin: 0px;
+        padding: 0px;
+    }
+    *
+    {
+        box-sizing: border-box;
+    }
+    .container1
+    {
+        width: 100%;
+        height: 300vh;
+       /* border: 2px solid red;*/
+        position: relative;
+        background-color: white;
+
+    }
+    .container2
+    {
+        width: 100%;
+        height: 93%;
+      /*  border: 2px solid black;*/
+        position: absolute;
+        background-color: white;
+        top: 7%;
+
+    }
+    .block
+    {
+        width: 100%;
+        height: 7%;
+      /*  border: 2px solid black;*/
+        position: absolute;
+        background-color: black;
+
+    }
+    .grill
+    {
+        width: 25%;
+        height: 50%;
+      /*  border: 2px solid black;*/
+        position: absolute; 
+        top:30%;
+        left: 5%;
+        font-family: 'Italianno', cursive;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        color: white;
+    }
+    .menu
+    {
+        width: 10%;
+        height: 25%;
+       /* border: 2px solid white;*/
+        position: absolute; 
+        top:45%;
+        right: 35%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .reservation
+    {
+        width: 10%;
+        height: 25%;
+       /* border: 2px solid white;*/
+        position: absolute; 
+        top:45%;
+        right:25%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+    }
+    .contact
+    {
+        width: 10%;
+        height: 25%;
+       /* border: 2px solid white;*/
+        position: absolute; 
+        top:45%;
+        right:15%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .galary
+    {
+        width: 10%;
+        height: 25%;
+      /*  border: 2px solid white;*/
+        position: absolute; 
+        top:45%;
+        right:5%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    a{
+        color: rgb(224, 54,6);
+        font-size: 18px;
+        text-underline-position:auto;
+    }
+    
+    .text1
+    {
+        width: 40%;
+        height: 6%;
+     /*  border: 2px solid black;*/
+        position: absolute; 
+        top:2%;
+        left:30%; 
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Italianno', cursive;
+        font-size: 65px;
+        transition: 1s;
+        
+       
+    }
+    .share
+        {
+            width: 20%;
+            height: 3%;
+            left: 50%;
+          /*  border: 2px solid black;*/
+            transform: translateX(-50%);
+            top: 10%;
+            position: absolute;
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        text-underline-position: auto;
+      
+            
+        }
+        .share>a{
+            
+            text-underline-position: below;
+            color:black;
+        
+        }
+        
+    .text2
+    {
+        width: 40%;
+        height: 10%;
+      /* border: 2px solid black;*/
+        position: absolute; 
+        top:15%;
+        left:30%; 
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Great Vibes', cursive;
+        font-size: 27px;
+        transition: 1s;
+        }
+        .img1
+        {
+            width: 42%;
+            height: 22%;
+          /*  border: 2px solid black;*/
+            position: absolute;
+            top:27%;
+            left: 7%;
+            background-image: url('img1.jpg');
+            background-size: 100% 100%;
+        }
+        .img2
+        {
+            width: 42%;
+            height: 22%;
+           /* border: 2px solid black;*/
+            position: absolute;
+            top:27%;
+            right: 7%;
+            background-image: url('img2.jpg');
+            background-size: 100% 100%;
+        }
+        .img3
+        {
+            width: 42%;
+            height: 20%;
+          /*  border: 2px solid black;*/
+            position: absolute;
+            top:52%;
+            left: 7%;
+            background-image: url('food2.jpg');
+            background-size: 100% 100%;
+        }
+        .philosophy
+        {
+        width: 20%;
+        height: 6%;
+      /*  border: 2px solid black;*/
+        position: absolute; 
+        top:52%;
+        right:16%; 
+       font-size: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+        }
+        .p_text
+        {
+            
+        width: 40%;
+        height: 10%;
+      /*  border: 2px solid black;*/
+        position: absolute; 
+        top:60%;
+        right:6%; 
+        font-family: 'Great Vibes', cursive;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        transition: 1s;
+        }
+        .macro
+        {
+        width: 35%;
+        height: 4%;
+      /*  border: 2px solid black;*/
+        position: absolute; 
+        top:75%;
+        left:9%; 
+       font-size: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+        }
+        .m_text
+        {
+            
+        width: 40%;
+        height: 10%;
+      /*  border: 2px solid black;*/
+        position: absolute; 
+        top:83%;
+        left:6%; 
+        font-family: 'Great Vibes', cursive;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        transition: 1s;
+        }
+        .img4
+        {
+            width: 42%;
+            height: 20%;
+           /* border: 2px solid black;*/
+            position: absolute;
+            top:75%;
+            right: 7%;
+            background-image: url('wine.jpg');
+            background-size: 100% 100%;
+        }
+        .container3
+        {
+            width: 100%;
+        height: 200%;
+       /* border: 2px solid red;*/
+        position: absolute;
+        background-color: white;
+
+        }
+        .img5
+        {
+            width: 44%;
+            height: 28%;
+           /* border: 2px solid black;*/
+            position: absolute;
+            top:8%;
+            right: 7%;
+            background-image: url('fruit.jpg');
+            background-size: 100% 100%;
+        }
+        .supplier
+        {
+            
+        width: 20%;
+        height: 5%;
+        /*border: 2px solid black;*/
+        position: absolute; 
+        top:15%;
+        left:13%; 
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        transition: 1s;
+        }
+        .s_text
+        {
+                  
+        width: 40%;
+        height: 5%;
+      /*  border: 2px solid black;*/
+        position: absolute; 
+        top:22%;
+        left:3%; 
+        font-family: 'Great Vibes', cursive;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        transition: 1s;
+        }
+        .line1
+        {
+            width: 80%;
+            height: 0%;
+            position: absolute;
+            border: 0.5px solid rgb(168, 162, 162);
+            top: 45%;
+            left: 10%
+        }
+        .line2
+        {
+            width: 80%;
+            height: 0%;
+            position: absolute;
+            border: 0.5px solid rgb(168, 162, 162);
+            top: 50%;
+            left: 10%
+        }
+        .line3
+        {
+            width: 80%;
+            height: 0%;
+            position: absolute;
+            border: 0.5px solid rgb(168, 162, 162);
+            top: 55%;
+            left: 10%
+        }
+        .line4
+        {
+            width: 80%;
+            height: 0%;
+            position: absolute;
+            border: 0.5px solid rgb(168, 162, 162);
+            top: 60%;
+            left: 10%
+        }
+        .box1
+        {
+            width: 35%;
+            height: 30%;
+           /* border: 2px solid red;*/
+            top: 44%;
+            left: 10%;
+            position: absolute;
+            font-size: 20px;
+            line-height: 70px;
+            color: rgb(156, 152, 152);
+            
+
+        }
+        .box2
+        {
+            width: 35%;
+            height: 30%;
+           /* border: 2px solid red;*/
+            top: 44%;
+            right: 10%;
+            position: absolute;
+            font-size: 20px;
+            line-height: 70px;
+            color: rgb(156, 152, 152);
+
+        }
+       
+
+    </style>
+</head>
+<body>
+        <script src="wow1.js"></script>
+        <script>
+        new WOW().init();
+        </script>
+        <div class="container1">
+            <div class="container2">
+                <div class="share">Share On:<a href="https://www.facebook.com/">Facebook/ </a>
+                    <a href="https://twitter.com/">Twitter/ </a><a href="https://in.pinterest.com/">Pinterest</a></div>
+                <div class="macro  wow slideInDown animated">Grilling’s sustainability practices</div>
+                <div class="m_text  wow slideInDown animated">Our gold organic certification, which insures that 90% to 100% of our food and
+                     beverages are organic and free of pesticides, is only one of the many initiatives we’ve taken
+                      to reduce our carbon footprint. By sourcing nearly 95% of our products locally, minimizing
+                       ingredient waste and saving water, we want to go beyond labels and 
+                     as much care to how we operate as a restaurant as our farmers and purveyors do with the soil
+                      and sea.</div>
+                <div class="img1 wow slideInLeft animated"></div>
+                <div class="img2 wow slideInRight animated"></div>
+                <div class="img3 wow slideInLeft animated"></div>
+                <div class="img4 wow slideInRight animated"></div>
+                <div class="text1  wow slideInDown animated"> <b>At Grilling’s we believe in food</b></div>
+                <div class="text2  wow slideInDown animated">Spontaneity. In the hunt for the perfect ingredient we realize 
+                    we’re in a race 
+                    against time. What’s the perfect ingredient today might
+                     not be tomorrow and that is why our kitchen is constantly changing on a daily
+                      basis.</div>
+                      <div class="philosophy  wow slideInDown animated">Philosohpy</div>
+                      <div class="p_text  wow slideInDown animated">Everyone, from restaurants to home cooks, 
+            can make a difference, but it first requires a will to do so.
+                 Many of our ideas are not the most technically advanced, but they do
+                require effort. We hope you are as inspired as we are to make the most of what
+                 we have now, so we can protect the food we love for the future.
+
+                        </div>
+            </div>
+                <div class="block">
+                        <div class="grill"><b>GRILLING</b></div>
+                        <div class="menu"><a href="menu.html">MENU</a></div>
+                        <div class="reservation"><a href="reservation.html">RESERVATION</a></div>
+                        <div class="contact"><a href="open.html">CONTACT</a></div>
+                        <div class="galary"><a href="gallery/gallery.html">GALLERY</a></div>
+                </div>
+                </div>
+                <div class="container3">
+                    <div class="img5 wow slideInRight animated"></div>
+                    <div class="supplier hvr-box-shadow-inset">BECOME SUPPLIER</div>
+                    <div class="s_text wow slideInDown animated">If you you are local and produce any 
+                        of the following, please get
+                         in touch.</div>
+                         <div class="box1">
+                             <ul>
+                                <li>Potatos</li>
+                                <li>Parsly</li>
+                                <li>Yam</li>
+                                <li>Beef</li>
+                             </ul>
+                         </div>
+                         <div class="box2">
+                                <ul>
+                                        <li>Tomatos</li>
+                                        <li>Fruits</li>
+                                        <li>Free Range Eggs</li>
+                                        <li>Pork</li>
+                                     </ul>
+                         </div>
+
+                         <div class="line1"></div>
+                         <div class="line2"></div>
+                         <div class="line3"></div>
+                         <div class="line4"></div>
+                        </div>
+</body>
+</html>

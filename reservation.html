@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Emilys+Candy|Felipa|Italianno|Lakki+Reddy|Lato|Markazi+Text|Milonga|Miss+Fajardose|Pacifico|Quintessential|Roboto|Shrikhand|Tangerine|UnifrakturMaguntia" rel="stylesheet">
+    <title>Document</title>
+    <style> 
+            html,body{
+              
+                  margin: 0px;
+                  padding: 0px;
+              }
+              *
+              {
+                  box-sizing: border-box;
+              }
+              .container1
+              {
+                  width: 100%;
+                  height: 100vh;
+                /*  border: 2px solid red;*/
+                  position: relative;
+                 background-image: url('bulb.jpg');
+                 background-size: 100% 100%;
+               
+                
+          
+              }
+              .grill
+          {
+              width: 25%;
+              height: 25%;
+             /* border: 2px solid black;*/
+              position: absolute; 
+              top:0%;
+              left: 5%;
+              font-family: 'Italianno', cursive;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 50px;
+              color: white;
+              
+          }
+          .menu
+          {
+              width: 10%;
+              height: 25%;
+             /* border: 2px solid white;*/
+              position: absolute; 
+              top:0%;
+              right: 35%; 
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              
+          }
+          .reservation
+          {
+              width: 10%;
+              height: 25%;
+             /* border: 2px solid white;*/
+              position: absolute; 
+              top:0%;
+              right:25%; 
+              display: flex;
+              justify-content: center;
+              align-items: center;
+           
+          }
+          .contact
+          {
+              width: 10%;
+              height: 25%;
+             /* border: 2px solid white;*/
+              position: absolute; 
+              top:0%;
+              right:15%; 
+              display: flex;
+              justify-content: center;
+              align-items: center;
+             
+          }
+          .galary
+          {
+              width: 10%;
+              height: 25%;
+            /*  border: 2px solid white;*/
+              position: absolute; 
+              top:0%;
+              right:5%; 
+              display: flex;
+              justify-content: center;
+              align-items: center;
+             
+          }
+          a{
+              color:white;
+              font-size: 18px;
+              text-underline-position:auto;
+          }
+          .event
+        {
+            width: 30%;
+            height: 25%;
+          /* border: 2px solid white;*/
+            position: absolute; 
+            top:35%;
+            right:35%; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'felipa', cursive;
+            color: white;
+            font-size: 60px;
+          
+        }
+        .share
+            {
+                width: 20%;
+                height: 3%;
+                left: 50%;
+              /*  border: 2px solid black;*/
+                transform: translateX(-50%);
+                top:60%;
+                position: absolute;
+                display: flex;
+            justify-content: center;
+            align-items: center;
+            text-underline-position: auto;
+            color: white;
+          
+                
+            }
+            .share>a{
+                
+                text-underline-position: below;
+                color:white;
+            
+            }
+            .container2
+              {
+                  width: 100%;
+                  height: 100vh;
+                /*  border: 2px solid red;*/
+                  position: relative;
+                  background-color: black;
+                 
+                }
+                .enquire
+        {
+            width: 45%;
+            height: 12%;
+           /* border: 2px solid red;*/
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 30px;
+            text-align: center;
+
+        }
+        .img1
+        {
+            width: 25%;
+            height: 68%;
+           /* border: 2px solid red;*/
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            background-image: url('img3.jpg');
+            background-size: 100% 100%;
+            z-index: 100;
+        }
+        .line1
+        {
+            width: 90%;
+            height: 0%;
+            border: 1px solid white;
+            position: absolute;
+            top: 43%;
+            left: 5%;
+        }
+        .line2
+        {
+            width: 90%;
+            height: 0%;
+            border: 1px solid white;
+            position: absolute;
+            top: 63%;
+            left: 5%;
+        }
+        .line3
+        {
+            width: 90%;
+            height: 0%;
+            border: 1px solid white;
+            position: absolute;
+            top: 83%;
+            left: 5%;
+        }
+        input[type="text"] 
+        {
+            background-color: black;
+            color: white;
+            top: 35%;
+            left: 40%;
+            font-size: 18px;
+            text-align: center;
+            border: none;
+            
+         
+        }
+        input[type="email"] 
+        {
+            background-color: black;
+            color: white;
+            top: 35%;
+            left: 55%;
+            font-size: 18px;
+            text-align: center;
+            border: none;
+            
+         
+        }
+        input[type="number"] 
+        {
+            background-color: black;
+            color: white;
+            top: 35%;
+            left: 70%;
+            font-size: 18px;
+            text-align: center;
+            border: none;
+            
+         
+        }
+        input[type="message"] 
+        {
+            background-color: black;
+            color: white;
+            top: 75%;
+            left: 40%;
+            font-size: 18px;
+            text-align: center;
+            border: none;
+            
+         
+        }
+        input[type="date"] 
+        {
+            background-color: black;
+            color: white;
+            top: 55%;
+            left: 42%;
+            font-size: 18px;
+            text-align: center;
+            border: none;
+            
+         }
+         input[type="time"] 
+        {
+            background-color: black;
+            color: white;
+            top: 55%;
+            left: 60%;
+            font-size: 18px;
+            text-align: center;
+            border: none;
+            
+         }
+         input[type="party_size"] 
+        {
+            background-color: black;
+            color: white;
+            top: 55%;
+            left: 70%;
+            font-size: 18px;
+            text-align: center;
+            border: none;
+            
+         }
+         .book
+         {
+             width:20%;
+             height: 10%;
+             border: 1px solid white;
+             position: absolute;
+             top: 13%;
+             left: 43%;
+             color: white;
+             font-size: 25px;
+            display: flex;
+           justify-content: center;
+            align-items: center; 
+            letter-spacing: 2px;
+         }
+         .book>a{
+            text-decoration: none;
+            color: rgb(172, 165, 165);
+        }
+
+            </style>
+</head>
+<body>
+        <div class="container1">
+                <div class="grill"><b>GRILLING</b></div>
+                                <div class="menu"><a href="menu.html">MENU</a></div>
+                                <div class="reservation"><a href="reservation.html">RESERVATION</a></div>
+                                <div class="contact"><a href="open.html">CONTACT</a></div>
+                                <div class="galary"><a href="gallery/gallery.html">GALLERY</a></div>
+                                <div class="event">Booking your table</div>
+                                <div class="share">Share On:<a href="https://www.facebook.com/">Facebook/ </a>
+                            <a href="https://twitter.com/">Twitter/ </a><a href="https://in.pinterest.com/">Pinterest</a></div>
+                                
+           </div> 
+            </div>
+            <div class="container2">
+                    <div class="enquire">For any enquiries please use the form below</div>
+                    <div class="img1"></div>
+                    <div class="line1"></div>
+                    <form action="">
+                            <input type="text" name="" placeholder="NAME" style="position: absolute">
+                            <input type="email" name="" placeholder="EMAIL" style="position: absolute">
+                            <input type="number"  name="" placeholder="PHONE" style="position: absolute">
+                            <input type="message"  name="" placeholder="MESSAGE" style="position: absolute">
+                            <input type="date"  name="" placeholder="DATE" style="position: absolute">
+                            <input type="time"  name="" placeholder="TIME" style="position: absolute">
+                            <input type="party_size" id="number"  name="" placeholder="PARTY SIZE" style="position: absolute">
+                        </form>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                    <div class="book"><a href="#">BOOKING NOW</a></div>
+                    
+            </div>
+</body>
+</html>
